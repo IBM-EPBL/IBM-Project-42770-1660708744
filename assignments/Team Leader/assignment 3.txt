@@ -1,0 +1,17 @@
+From gpiozero import Button, TrafficLights, Buzzer
+Form time import sleep
+
+Buzeer =Buzzer(15)
+Button =Button(21)
+Lights = TrafficLights(25,8,7)
+While True:
+Button.wait_for_press()
+Buzzer.on()
+Lights.green.on()
+Sleep(1)
+Light.amber.on()
+Sleep(1)
+Lights.red.on()
+Sleep(1)
+Lights.off()
+Buzzer.off()
